@@ -7,19 +7,9 @@
 // remove parenthesis, spaces, and hyphens as in "(321) 321-4321"
 // remove dots as in "321.321.4321"
 
-// Let's remove any character different than numbers
-const getNumbers = (pNum) => {
-  return pNum.match(/\d+/g).join('');
-}
-
-const shortPhoneNumber = (cleanPNum) => {
-  
-}
-
 const phoneNumber = (pNum) => {
-  const numbers = getNumbers(pNum);
-
-  return numbers;
+  const matchedPhoneNumber = pNum.match(/^\D*?1?\D*?([2-9][0-9]{2})\D*?([2-9][0-9]{2})\D*?(\d{4})$/);
+  return matchedPhoneNumber ? matchedPhoneNumber.slice(1,4).join('') : null;
 }
 
 module.exports = phoneNumber
