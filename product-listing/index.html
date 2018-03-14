@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>RealTruck</title>
+
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+  <label for="drawer-toggle" id="drawer-toggle-label"></label>
+
+  <nav class="sidemenu" id="sidemenu">
+    <div class="item">
+      <div class="text"></div>
+      <div class="indicator">
+        <img src="https://png.icons8.com/metro/35/EEEEEE/phone.png" />
+        <img src="https://png.icons8.com/material/35/EEEEEE/shopping-cart.png" />
+      </div>
+    </div>
+    <div class="item search-menu">
+      <input type="search" placeholder="Search..." />
+      <div class="indicator"><img src="https://png.icons8.com/ios/26/888888/search-filled.png" /></div>
+    </div>
+
+    <div class="item">
+      <div class="text">Exterior Accessories</div>
+      <div class="indicator"><img src="https://png.icons8.com/ios/26/7C7C7C/forward-filled.png" alt="Item"></div>
+    </div>
+    <div class="item">
+      <div class="text">Interior Accessories</div>
+      <div class="indicator"><img src="https://png.icons8.com/ios/26/7C7C7C/forward-filled.png" alt="Item"></div>
+    </div>
+    <div class="item">
+      <div class="text">Lighting</div>
+      <div class="indicator"><img src="https://png.icons8.com/ios/26/7C7C7C/forward-filled.png" alt="Item"></div>
+    </div>
+    <div class="item">
+      <div class="text">Performance</div>
+      <div class="indicator"><img src="https://png.icons8.com/ios/26/7C7C7C/forward-filled.png" alt="Item"></div>
+    </div>
+    <div class="item">
+      <div class="text">Specialty</div>
+      <div class="indicator"><img src="https://png.icons8.com/ios/26/7C7C7C/forward-filled.png" alt="Item"></div>
+    </div>
+    <div class="item">
+      <div class="text">Suspension</div>
+      <div class="indicator"><img src="https://png.icons8.com/ios/26/7C7C7C/forward-filled.png" alt="Item"></div>
+    </div>
+    <div class="item">
+      <div class="text">Weels & Tires</div>
+      <div class="indicator"><img src="https://png.icons8.com/ios/26/7C7C7C/expand-arrow.png" alt="Item"></div>
+    </div>
+    <div class="item subitem">
+      <div class="text">Lug Nuts</div>
+    </div>
+    <div class="item subitem">
+      <div class="text">Tires</div>
+    </div>
+    <div class="item subitem">
+      <div class="text">Wheels & Rims</div>
+    </div>
+    <div class="item">
+      <div class="text">Shop by Brand</div>
+      <div class="indicator"><img src="https://png.icons8.com/ios/26/7C7C7C/forward-filled.png" alt="Item"></div>
+    </div>
+    <div class="item">
+      <div class="text">Contact Us</div>
+    </div>
+  </nav>
+
+
+  <div class="content">
+
+    <div class="row" id="top-identity">
+      <div class="col logo">
+        <img src="../assets/realtruck_horizontal.svg" alt="RealTruck" height="44" class="logo"/>
+      </div>
+      <div class="col vertical-align-middle align-right" id="search">
+        <div class="search">
+          <input type="search" placeholder="Search..." />
+          <span><img src="https://png.icons8.com/ios/26/888888/search-filled.png" /></span>
+        </div>
+        <div class="contact">
+          <img src="https://png.icons8.com/metro/30/444444/phone.png" class="phone" />
+          <div class="phone">
+            <span class="number">877-216-5446</span>
+            <span class="text">Sales & Service Hours</span>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="https://png.icons8.com/material/30/444444/shopping-cart.png" />
+        </div>
+      </div>
+    </div>
+
+    <div id="menu">
+      <div class="item">
+        <span>Experior Accessories</span>
+      </div>
+      <div class="item">
+        <span>Interior Accessories</span>
+      </div>
+      <div class="item">
+        <span>Lighting</span>
+      </div>
+      <div class="item">
+        <span>Performance</span>
+      </div>
+      <div class="item">
+        <span>Specialty</span>
+      </div>
+      <div class="item">
+        <span>Suspension</span>
+      </div>
+      <div class="item">
+        <span>Wheels & Tires</span>
+        <div class="dropdown">
+          <a href="#" class="subitem">Lug Nuts</a>
+          <a href="#" class="subitem">Tires</a>
+          <a href="#" class="subitem">Wheels & Rims</a>
+        </div>
+      </div>
+      <div class="item">
+        <span>Shop by Brand</span>
+      </div>
+      <div class="item">
+        <span>Contact Us</span>
+      </div>
+    </div>
+
+    <div class="row" id="truck">
+      <div class="bkg-truck vertical-align-bottom">
+        <div class="wheels-lg col-3">
+          <span class="small">Truck Accessories ></span>
+          <h1>WHEELS & RIMS</h1>
+        </div>
+      </div>
+      <div class="wheels">
+        <span class="small">Truck Accessories ></span>
+        <h1>WHEELS & RIMS</h1>
+      </div>
+    </div>
+
+    <div class="row" id="sorting">
+      <div class="col">
+        Showing 1 - 30 of 422 results
+      </div>
+      <div class="col vertical-align-middle align-right">
+        <label for="page-size">Show:</label>
+        <select name="page-size">
+          <option>30</option>
+        </select>
+
+        <label for="sort-by">Sort By:</label>
+        <select name="sort-by">
+          <option>Recommended</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row" id="product-list">
+
+    </div>
+
+
+  </div>
+
+  <!-- Real Truck Page Content
+  <ol>
+    <li>
+      Add styles and fonts
+    </li>
+    <li>
+      Create columns and gutters
+    </li>
+    <li>
+      Build the full page without the funcional menus
+    </li>
+    <li>
+      Add responsiveness
+    </li>
+    <li>
+      Create the functional menus using checkbox for states
+    </li>
+
+  </ol> -->
+</body>
+</html>

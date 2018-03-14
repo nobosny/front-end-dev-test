@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.content {
+  max-width: 1236px;
+  width: 100%; }
+
+/* Grid system, like Bootstrap */
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 12px;
+  padding-left: 12px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%; }
+
+.col-3 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%; }
+
+.vertical-align-middle {
+  display: flex;
+  align-items: center; }
+
+.vertical-align-bottom {
+  display: flex;
+  align-items: baseline; }
+
+.align-right {
+  justify-content: flex-end; }
+
+.align-center .col {
+  display: flex;
+  justify-content: center; }
+
+#top-identity {
+  margin-bottom: 10px;
+  margin-top: 23px; }
+  #top-identity .logo {
+    text-align: center; }
+  #top-identity #search {
+    display: none; }
+  #top-identity .search {
+    display: inline-block;
+    width: 339px;
+    position: relative; }
+    #top-identity .search input {
+      background-color: #EEEEEE;
+      display: block;
+      border: none;
+      height: 33px;
+      width: 100%;
+      padding: 10px;
+      font-size: 18px; }
+    #top-identity .search span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 4px; }
+  #top-identity .contact {
+    display: inline-block;
+    margin-left: 20px; }
+    #top-identity .contact .phone {
+      display: inline-block; }
+      #top-identity .contact .phone .number {
+        font-family: Roboto-Black;
+        font-size: 20px;
+        color: #444444;
+        letter-spacing: 0;
+        line-height: 20px;
+        display: block; }
+      #top-identity .contact .phone .text {
+        display: block;
+        font-size: 12px;
+        color: #444444;
+        letter-spacing: 0;
+        line-height: 12px; }
+  #top-identity .cart {
+    display: inline-block;
+    margin-left: 20px; }
+
+#menu {
+  display: none;
+  color: #CCCCCC;
+  background-color: #222222;
+  font-family: Roboto-Black;
+  padding-left: 30px;
+  padding-right: 30px; }
+  #menu .item {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    position: relative; }
+    #menu .item span {
+      align-self: center;
+      cursor: pointer; }
+    #menu .item:hover {
+      background-color: #444444; }
+      #menu .item:hover .dropdown {
+        display: block; }
+    #menu .item .dropdown {
+      display: none;
+      position: absolute;
+      font-weight: bold;
+      font-family: Roboto;
+      top: 55px;
+      width: 350px;
+      z-index: 101;
+      background-color: #444444;
+      box-shadow: 0px 13px 22px 3px rgba(0, 0, 0, 0.35);
+      padding: 80px 35px 25px 35px;
+      background: linear-gradient(#444444, rgba(68, 68, 68, 0.85)), url("../../assets/wheel.png"); }
+      #menu .item .dropdown .subitem {
+        margin-top: 14px;
+        cursor: pointer;
+        display: block; }
+
+#truck .bkg-truck {
+  background: url("../../assets/truck.png") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  width: 100%; }
+
+#truck .wheels {
+  width: 100%;
+  padding: 10px 15px; }
+  #truck .wheels h1 {
+    font-family: Roboto-Black;
+    font-size: 36px;
+    color: #251D24;
+    letter-spacing: 0;
+    margin: 0;
+    margin-top: 3px; }
+  #truck .wheels .small {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0;
+    line-height: 14px; }
+
+#sorting {
+  background: #EEEEEE;
+  padding: 16px 0;
+  font-family: Roboto-Bold;
+  font-size: 16px;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 22px; }
+  #sorting label {
+    margin-right: 5px;
+    margin-left: 15px; }
+
+#product-list {
+  height: 600px; }
+
+#sidemenu {
+  position: absolute;
+  width: 280px;
+  height: 100%;
+  top: 0;
+  left: -300px;
+  z-index: 100;
+  overflow-x: hidden;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 20px;
+  background-color: rgba(61, 61, 61, 0.96);
+  color: #CCCCCC;
+  box-shadow: 6px 3px 59px -12px rgba(0, 0, 0, 0.75); }
+  #sidemenu .item {
+    padding: 15px;
+    color: #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #666666; }
+    #sidemenu .item .indicator {
+      text-align: right; }
+    #sidemenu .item.search-menu {
+      background-color: #EEEEEE; }
+      #sidemenu .item.search-menu input {
+        background-color: #EEEEEE;
+        display: block;
+        border: none;
+        height: 33px;
+        width: 100%;
+        padding: 0;
+        font-size: 24px; }
+        #sidemenu .item.search-menu input::placeholder {
+          color: #888888; }
+    #sidemenu .item.subitem {
+      color: #C9A754;
+      padding-left: 35px; }
+
+#drawer-toggle {
+  position: absolute;
+  opacity: 0; }
+  #drawer-toggle:checked ~ #drawer-toggle-label:before {
+    background: #EEEEEE;
+    box-shadow: 0 10px 0 #EEEEEE, 0 20px 0 #EEEEEE; }
+  #drawer-toggle:checked ~ #sidemenu {
+    left: 0; }
+
+#drawer-toggle-label {
+  user-select: none;
+  left: 0px;
+  top: 10px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0);
+  z-index: 101; }
+  #drawer-toggle-label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: #888888;
+    left: 15px;
+    top: 15px;
+    box-shadow: 0 10px 0 #888888, 0 20px 0 #888888; }
+
+@media (min-width: 480px) {
+  .wheels-lg {
+    display: none; } }
+
+@media (min-width: 768px) {
+  #truck .wheels {
+    display: none; }
+  #truck .wheels-lg {
+    display: none; } }
+
+@media (min-width: 1024px) {
+  #top-identity #search {
+    display: flex; }
+  #top-identity .logo {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+    margin-left: 10px; }
+  #menu {
+    display: flex; }
+  #sidemenu {
+    display: none; }
+  #drawer-toggle-label {
+    display: none; }
+  #truck .wheels {
+    display: none; }
+  #truck .wheels-lg {
+    opacity: 0.9;
+    background: #EDB81E;
+    padding: 20px 15px;
+    align-self: flex-end;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    display: block; }
+    #truck .wheels-lg h1 {
+      font-family: Roboto-Black;
+      font-size: 36px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      margin: 0;
+      margin-top: 6px; }
+    #truck .wheels-lg .small {
+      font-family: Roboto;
+      font-size: 12px;
+      color: #666666;
+      letter-spacing: 0;
+      line-height: 14px; } }
