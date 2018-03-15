@@ -41,10 +41,10 @@ a {
   max-width: 100%;
 }
 
-.col-3 {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-}
+// .col-3 {
+//   flex: 0 0 33.33%;
+//   max-width: 33.33%;
+// }
 
 .vertical-align-middle {
   display: flex;
@@ -165,7 +165,6 @@ a {
       display: none;
       position: absolute;
       font-weight: bold;
-      font-family: Roboto;
       top: 55px;
       width: 350px;
       z-index: 101;
@@ -194,8 +193,14 @@ a {
   .bkg-truck {
     background: url('../../assets/truck.png') no-repeat center;
     background-size: cover;
-    height: 500px;
+    // height: 500px;
     width: 100%;
+    height: 50vw;
+    max-height: 500px;
+  }
+
+  .wheels-lg {
+    display: none;
   }
 
   .wheels {
@@ -212,7 +217,6 @@ a {
     }
 
     .small {
-      font-family: Roboto;
       font-size: 12px;
       color: #666666;
       letter-spacing: 0;
@@ -222,7 +226,6 @@ a {
 }
 
 #sorting {
-  background: #EEEEEE;
   padding: 16px 0;
 
   font-family: Roboto-Bold;
@@ -231,9 +234,17 @@ a {
   letter-spacing: 0;
   line-height: 22px;
 
+  #sorting-group {
+    display: none;
+  }
+
   label {
     margin-right: 5px;
     margin-left: 15px;
+  }
+
+  span {
+    display: none;
   }
 }
 
