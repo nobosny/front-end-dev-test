@@ -246,10 +246,22 @@ a {
   span {
     display: none;
   }
+
+  .sorting-dropdown {
+    img {
+      margin-left: 10px;
+    }
+  }
 }
 
 #product-list {
-  height: 600px;
+  ol {
+    li {
+      &.done {
+        text-decoration: line-through;
+      }
+    }
+  }
 }
 
 #sidemenu {
