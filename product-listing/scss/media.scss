@@ -1,0 +1,114 @@
+@media (min-width: 480px) {
+  .wheels-lg {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #truck {
+    .wheels {
+      display: none;
+    }
+    .wheels-lg {
+      opacity: 0.9;
+      background: #EDB81E;
+      padding: 20px 15px;
+      align-self: flex-end;
+      width: 100%;
+      margin-left: 0;
+      display: block;
+
+      h1 {
+        font-family: Roboto-Black;
+        font-size: 36px;
+        color: #444444;
+        letter-spacing: 0;
+        margin: 0;
+        margin-top: 6px;
+      }
+
+      .small {
+        font-size: 12px;
+        color: #666666;
+        letter-spacing: 0;
+        line-height: 14px;
+      }
+    }
+  }
+  #sorting {
+    background: #EEEEEE;
+    #sorting-group {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #top-identity {
+    #search {
+      display: flex;
+    }
+
+    .logo {
+      flex: 0 0 auto;
+      width: auto;
+      max-width: none;
+      margin-left: 10px;
+    }
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #sidemenu {
+    display: none;
+  }
+
+  #drawer-toggle-label {
+    display: none;
+  }
+
+  #truck {
+    .wheels {
+      display: none;
+    }
+    .wheels-lg {
+      opacity: 0.9;
+      background: #EDB81E;
+      padding: 20px 15px;
+      align-self: flex-end;
+      margin-bottom: 12px;
+      margin-left: 12px;
+      display: block;
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+
+      h1 {
+        font-family: Roboto-Black;
+        font-size: 36px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        margin: 0;
+        margin-top: 6px;
+      }
+
+      .small {
+        font-size: 12px;
+        color: #666666;
+        letter-spacing: 0;
+        line-height: 14px;
+      }
+    }
+  }
+
+  #sorting {
+    background: #EEEEEE;
+    #sorting-group {
+      display: flex;
+    }
+    span {
+      display: inline;
+    }
+  }
+}
